@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <title>백엔드 개발자?</title>
+  <meta charset="utf-8">
+  <style>
+    h1 {
+      fnot-size:45px;
+      text-align: center;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    .active {
+      color:blue
+    }
+    .top {
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:15px;
+    }
+    .su {
+      border-right:1px solid gray;
+      width:150px;
+      margin:0;
+      padding:20px;
+      padding-left: 40px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ul {
+      margin-top:30px;
+      margin-bottom:30px;
+    }
+    #article {
+      padding-left: 130px;
+      padding-top: 15px;
+      padding-right: 20px;
+    }
+    #article ol {
+      padding-left: 0px;
+    }
+    @media(max-width:650px) {
+      #grid{
+        display: block;
+      }
+      .su {
+        border-right:none;
+      }
+      #article {
+        padding-left: 20px;
+        padding-top: 0px;
+        padding-right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="top"><a href="home.html">꿈진로 발표</a></h1>
+  <p style="text-align: right;" class="top">2309 박효리</p><!--9번코드 오른쪽정렬-->
+  <div id="grid">
+      <ol class="su"><h3>
+        <li><a href="1.html">웹 개발자?</a></li>
+        <li><a href="3.html" class="active">백엔드 개발자?</a></li>
+        <li><a href="2.html">프론트엔드 개발자?</a></li>
+      </h3></ol>
+      <div id="article">
+          <h2>백엔드 개발자?</h2><!--문단간격 크게-->
+            <p>눈에 보이지 않는 영역. 데이터 베이스와 웹 api 개발 업무를 주로 하는 개발자. 서버 관리나 네트워크에 관한 지식이 풍부해야 함.<p>
+            <p>사용자의 요청을 받아, 요청에 맞는 결과를 돌려주는 기능을 개발함. 사업파트너의 구체적인 요청을 파악하고->프로그래밍, 데이터베이스 구축등 기술적인 측면에서 요구사항을 효율적으로 실체화.</p>
+            <p>후에 프론트엔드가 얹혀질 토대를 닦음.</p>
+            <p>기본적으로 HPH, Ruby, python, Java 등의 프로그래밍 언어를 활용.</p>
+            <p>데이터 베이스 활용을 위한 프로그램(Oracle, MySQL 등)을 다룰 줄 알아야.</p>
+                <ol>
+                  <ul><strong> 데이터 베이스, DB</strong><!--문단간격 조금크게-->
+                  <p>여러 사람이 공유, 사용하기 위해 데이터를 체계적으로 분류 및 저장해둔 데이터 집합.</p>
+                  <p>가장 많이 사용되는 형식은 관계형 데이터베이스(RDBMS). 조금 경직된 구조를 가지고 있으나 자료가 방대한 큰 기업에서 주로 사용. 이 형식을 사용하기 위해 만들어진 언어(SQL)가 존재할 정도.</p>
+                  <p>관계형 데이터베이스 외에도 객체형, 문서형, 컬럼 패밀리형 데이터베이스 등 다양한 형식 존재.</p>
+                  <p>업계에서는 데이터 베이스를 활용하기 위해 사용하는 프로그램(DBMS) 또한 넓은 의미로 데이터베이스라는 개념에 포함하기도 함. 예시: 오라클.</p></ul>
+                  <ul><strong> 웹 API </strong><!--문단간격 조금크게-->
+                  <p>API = Application Programming Interface, 컴퓨터-컴퓨터 간의 연결이나 컴퓨터-프로그램간 상호작용에 사용되는 인터페이스.
+                    본디 프로그래밍에서는 프로그램 언어로 특정한 명령을 내리기만 하면 컴퓨터가 지정된 행동들을 수행하게 하는 것을 의미</p>
+                  <p>웹 API? 웹 서버와 사용자가 특정한 정보를 주고 받을 수 있게 하는 창구.
+                    (집 주변 음식점을 찾고 싶을 때, 주소를 입력하면 DB에서 집 주변 음식점에 대한 데이터를 찾아 웹에 표시해주는 기능을 가진 웹 API.)</p>
+                  <p>사용자가 어떤 정보를 제공하고, 서버로부터 어떤 정보를 받을지 명시해놓은 API 명세.</p>
+                  <p>웹 API 사용시, 기능은 제공하되 어떻게 프로그램이 작동하는지는 숨길 수 있음. 음식점에서 주문하면 음식이 나오지만, 레시피는 알려주지 않듯!</p>
+                  <p>번외: 공공기관, 기업에서 제공하는 오픈 API. 예시: 기상청 오픈 API를 이용해 내가 만든 사이트에 기상청 예보를 표시 할 수 있다.
+                    파트너십을 맺은 두 기관이 서로의 애플리케이션을 사용 할 수 있도록 개발하는 파트너 API.</p></ul>
+                </ol>
+      </div>
+  </div>
+</body>
+</html>
